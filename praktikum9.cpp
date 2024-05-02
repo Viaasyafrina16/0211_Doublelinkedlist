@@ -175,7 +175,24 @@ void revtraverse()
 }
 
 void revtraverse()
+{
+    if (listEmpty())
+        cout << "\nList is Empty" << endl;
+    else
+    {
+        cout << "\nRecords in descending order of roll number are:" << endl;
+        Node *currentNode = START;
+        while (currentNode->next != NULL)
+        {
+            cout << currentNode->noMhs << " " << currentNode->name << endl;
+            currentNode = currentNode->prev;
+        }
+    }
+}
 
+void searchData()
+{
+    
 
 
 
