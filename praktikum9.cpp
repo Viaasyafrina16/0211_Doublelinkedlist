@@ -133,6 +133,13 @@ cout << "\x1b[32mRecord with roll number " << rollNo << " deleted\x1b[0m" << end
 }
 
 bool listEmpty()
+{
+    return (START == NULL);
+}
+
+void traverse()
+{
+    
 
 
 
