@@ -224,17 +224,52 @@ int main()
             cout << "4. View all records in the descending order of roll numbers" << endl;
             cout << "5. Search for a record in the list" << endl;
             cout << "6. Exit" << endl;
-            char << ch;
+            char  ch;
             cin >> ch;
 
             switch (ch)
+            {
+            case '1':
+                addNode();
+                break;
+            case '2':
+                deleteNode();
+                break;
+
+            case '3':
+                traverse();
+                break;
+            case '4':
+                revtraverse();
+                break;
+            case '5' :
+                searchData();
+                break;
+            case '6' :
+                return 0;
+            default:
+                cout << "\nInvalid option" << endl;
+                break;
+            }
+        }
+        catch (exception &e)
+        {
+            cout << "Check for the values entered." << endl;
+        }
+    }
+    
+}
+     
+
+
+
+        
+   
+
+
+
 
             
-        }
-        catch(const std::exception& e)
-        {
-            std::cerr << e.what() << '\n';
-        }
         
 
 
